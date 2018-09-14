@@ -21,5 +21,5 @@ const TaskSchema = new goose.Schema({
     
 },{timestamps : true})
 
-const Tasks = goose.model('People', TaskSchema);
+const Tasks = goose.model('RFTaskApi', TaskSchema);
 module.exports = Tasks;

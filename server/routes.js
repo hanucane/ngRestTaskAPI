@@ -3,6 +3,7 @@ const {home,getTask,createTask,updateTask,removeTask} = require("./controller.js
 function router(app)
 {
     app.get('/',home);
+    app.get('/tasks', home);
     app.get('/:id',getTask);
     app.post('/new',createTask);
     app.put('/update/:id', updateTask);

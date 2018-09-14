@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpService } from './http.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'public';
+  title = 'Angular';
+
+  constructor(private _httpService: HttpService){
+  }
+
+  GetAllTasks(){
+    return this._httpService.getTasks();
+  }
+  GetOneTask(){
+    return this._httpService.getOneTask();
+  }
 }
