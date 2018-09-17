@@ -4,7 +4,7 @@ function router(app)
 {
     app.get('/',home);
     app.get('/tasks', home);
-    app.get('/:id',getTask);
+    app.get('/task/:id',getTask);
     app.post('/new',createTask);
     app.put('/update/:id', updateTask);
     app.delete('/remove/:id', removeTask);
