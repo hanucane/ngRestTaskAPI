@@ -18,6 +18,10 @@
   </li>
   <li><button (click) = "GetAllTasks()">Get all Tasks</button></li>
   <li><button (click) = "GetOneTask()">Get one Task</button></li>
-
+  <li><button (click) = "getTasksFromService()">Get Tasks from service</button></li>
 </ul>
+<h2>Tasks</h2>
+  <ul *ngFor="let task of tasks">
+    <li >{{task.description}} <b>Completion: {{task.completed}}</b></li>
+  </ul>
 
