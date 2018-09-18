@@ -18,7 +18,6 @@ const TaskSchema = new goose.Schema({
         type : Boolean,
         default : false
     },
-    
 },{timestamps : true})
 
 const Tasks = goose.model('RFTaskApi', TaskSchema);
